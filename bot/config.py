@@ -5,7 +5,7 @@ class Config:
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-    SESSION_NAME = os.environ.get("SESSION_NAME", "utubeitbot")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "vdbabot")
 
     API_ID = int(os.environ.get("API_ID"))
 
@@ -19,7 +19,7 @@ class Config:
 
     AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
 
-    AUTH_USERS = [BOT_OWNER, 754495556] + (
+    AUTH_USERS = [BOT_OWNER] + (
         [int(user.strip()) for user in AUTH_USERS_TEXT.split(",")]
         if AUTH_USERS_TEXT
         else []
